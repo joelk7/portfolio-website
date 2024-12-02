@@ -408,6 +408,67 @@
         </div>
       
 -->
+       <div class="projects-section" id="project">
+    <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+      <p>My Projects</p>
+      <h2>Featured Works</h2>
+    </div>
+  
+    <div class="projects-container">
+      <!-- Portfolio Website Project -->
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p class="project-description">
+          A portfolio website hosted on AWS using CloudFront for secure delivery, with static files stored in an AWS S3 bucket.
+          Jenkins, running in a Docker container, manages the CI/CD pipeline. When code changes are committed to the GitHub repository,
+          a webhook triggers the pipeline to update the files in S3.
+        </p>
+        <div class="project-image">
+          <img src="img/portfolio-web-arch.jpg" alt="Portfolio Website Architecture">
+        </div>
+        <div class="project-content">
+          <div class="project-details">
+            <ul>
+              <li><strong>AWS S3:</strong> Object storage.</li>
+              <li><strong>CloudFront:</strong> Secure delivery.</li>
+              <li><strong>GitHub:</strong> Version control.</li>
+              <li><strong>Jenkins:</strong> CI/CD pipeline.</li>
+              <li><strong>Docker:</strong> Containerization.</li>
+            </ul>
+            <a href="https://github.com/joelk7/portfolio-website" target="_blank" rel="noopener noreferrer" class="repo-link">
+              View Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Ansible EC2 Automation Project -->
+      <div class="project-card">
+        <h3>Ansible EC2 Automation</h3>
+        <p class="project-description">
+            This project uses Ansible to automate key EC2 management tasks on AWS, focusing on efficient and secure infrastructure handling. 
+            Key features include:
+          </p>
+  
+        <div class="project-image">
+          <img src="img/ansible.png" alt="Ansible EC2 Automation">
+        </div>
+        <br>
+        <div class="project-content">
+          <ul class="project-details">
+            <li>Automated creation, launching, and shutdown of multiple EC2 instances.</li>
+            <li>Passwordless SSH authentication for secure and seamless access.</li>
+            <li>Task automation using Ansible playbooks for repeatable infrastructure processes.</li>
+            <li>Role-based configuration to organize and manage tasks efficiently.</li>
+
+          </ul>
+          <a href="https://github.com/joelk7/ansible_ec2_create" target="_blank" rel="noopener noreferrer" class="repo-link">
+            View Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>    
      
     
 

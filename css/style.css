@@ -1069,86 +1069,92 @@ a:focus {
     margin: 0 auto;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
-   
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
-    color: #17a5be; /* Updated color */
-  }
-  
-  .projects-container {
+    color: #17a5be;
+}
+
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-  }
-  
-  .project-card {
+    align-items: stretch; /* Ensures consistent alignment across browsers */
+}
+
+.project-card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    width: 500px;
+    width: calc(33.33% - 30px); /* Responsive card size with consistent gap */
+    max-width: 500px; /* Limits the width of each card */
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-card h3 {
+    display: flex; /* Ensure proper flex layout for content alignment */
+    flex-direction: column; /* Ensures children stack vertically */
+    justify-content: space-between; /* Evenly spaces content */
+}
+
+.project-card h3 {
     margin-top: 0;
-    color: #17a5be; /* Updated color */
+    color: #17a5be;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  .project-description {
+}
+
+.project-description {
     font-size: 14px;
     color: #555;
     margin-bottom: 15px;
     line-height: 1.6;
-  }
-  
-  .project-content {
+}
+
+.project-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
-  
-  .project-details {
+}
+
+.project-details {
     margin-bottom: 15px;
-  }
-  
-  .project-details ul {
+}
+
+.project-details ul {
     list-style: none;
     padding: 0;
     margin: 10px 0;
-  }
-  
-  .project-details ul li {
+}
+
+.project-details ul li {
     margin: 5px 0;
     color: #555;
-  }
-  
-  .repo-link {
+}
+
+.repo-link {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #17a5be; /* Updated color */
+    color: #17a5be;
     font-weight: bold;
-  }
-  
-  .repo-link:hover {
+}
+
+.repo-link:hover {
     text-decoration: underline;
-    color: #005a70; /* Darker shade on hover */
-  }
-  
-  .project-image img {
+    color: #005a70;
+}
+
+.project-image img {
     max-width: 100%;
+    height: auto; /* Ensures images maintain aspect ratio */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
+
   
 /*******************************/
 /********* Footer CSS **********/

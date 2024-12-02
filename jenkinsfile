@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    environment {
+        AWS_ACCESS_KEY_ID = credentials('aws-jenkins-demo') // Jenkins stored credential ID
+        AWS_SECRET_ACCESS_KEY = credentials('aws-jenkins-demo') // Jenkins stored credential ID
+        S3_BUCKET = 'my-portfolio-web-1'
+    }
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main', url: 'https://github.com/joelk7/portfolio-website.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh '''
+                # Optional: Add build steps if required, such as npm build or other tools
+                echo "No build step needed for static site"
+                '''
+            }
+        }
+        stage('Deploy to S3') {
+            steps {
+                sh '''
+                  aws s3 sync . s3://$S3_BUCKET --acl public-read
+                '''
+            }
+        }
+    }
+}

@@ -1081,7 +1081,7 @@ h2 {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     justify-content: center;
     align-items: stretch; /* Ensures consistent alignment across browsers */
 }
@@ -1090,7 +1090,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    width: calc(33.33% - 30px); /* Responsive card size with consistent gap */
+    width: calc(43.33% - 30px); /* Responsive card size with consistent gap */
     max-width: 500px; /* Limits the width of each card */
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
